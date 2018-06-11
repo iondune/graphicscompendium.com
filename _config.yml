@@ -1,0 +1,7 @@
+
+baseurl: "/"
+url: "http://graphicscompendium.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge

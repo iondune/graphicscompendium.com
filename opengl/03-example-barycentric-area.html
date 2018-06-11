@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script>
+/* CPE 471 barycentric area demonstration */
+
+var b_alpha, gamma, beta;
+var pt, p1, p2, p3;
+
+function setup() {
+  createCanvas(700, 700);
+  background(12, 34, 56);
+  smooth();
+  gamma = 0.33333;
+  beta = 0.33333;
+  b_alpha = 1 - beta - gamma;
+
+  p1 = createVector(60, 60);
+  p2 = createVector(540, 640);
+  p3 = createVector(600, 150);
+  pt = createVector(0, 0);
+
+  pt.x = b_alpha*p1.x + beta*p2.x + gamma*p3.x;
+  pt.y = b_alpha*p1.y + beta*p2.y + gamma*p3.y;
+}
+
+function bary(P, A, B, C) {
+  var triArea;
+  var bArea, gArea;
+
+  triArea = 0.5*((B.x - A.x)*(C.y-A.y)) - 0.5*((C.x-A.x)*(B.y-A.y));
+
+  bArea = 0.5*((A.x - C.x)*(P.y-C.y)) - 0.5*((P.x-C.x)*(A.y-C.y));
+  gArea = 0.5*((B.x - A.x)*(P.y-A.y)) - 0.5*((P.x-A.x)*(B.y-A.y));
+
+  beta = bArea/triArea;
+  gamma = gArea/triArea;
+  b_alpha = 1 - beta - gamma;
+
+  pt.x = b_alpha*p1.x + beta*p2.x + gamma*p3.x;
+  pt.y = b_alpha*p1.y + beta*p2.y + gamma*p3.y;
+}
+
+
+function mouseDragged() {
+  pt.x = mouseX;
+  pt.y = mouseY;
+  bary(pt, p1, p2, p3);
+}
+
+function draw() {
+
+  background(12, 34, 56);
+
+  fill(128);
+  textSize(28);
+  text("alpha " + b_alpha.toFixed(2), 50, 500);
+  fill(255);
+  text("beta "+ beta.toFixed(2),      50, 530);
+  fill(150, 150, 200);
+  text("gamma " + gamma.toFixed(2),   50, 560);
+
+  fill(255);
+  triangle(p1.x, p1.y, p2.x, p2.y, p3.x, p3.y);
+
+  //smaller triangles
+ if (b_alpha >0){
+    fill(128, 150);
+    noStroke();
+ } else {
+    fill(0, 255);
+    stroke(255);
+    strokeWeight(2.0);
+  }
+  triangle(pt.x, pt.y, p2.x, p2.y, p3.x, p3.y);
+  if (beta > 0) {
+    fill(220, 150);
+    noStroke();
+  } else {
+    fill(255, 200);
+    stroke(0);
+    strokeWeight(2.0);
+  }
+  triangle(p1.x, p1.y, pt.x, pt.y, p3.x, p3.y);
+  if (gamma >0){
+    fill(150, 150, 200, 150);//gamma
+    noStroke();
+  }else {
+    fill(100, 100, 150, 200);//gamma
+    stroke(255);
+    strokeWeight(2.0);
+  }
+  triangle(p1.x, p1.y, p2.x, p2.y, pt.x, pt.y);
+
+  noStroke();
+  fill(128); //alpha
+  ellipse(p1.x, p1.y, 20, 20);
+  fill(255); //beta
+  ellipse(p2.x, p2.y, 20, 20);
+  fill(150, 150, 200);//gamma
+  ellipse(p3.x, p3.y, 20, 20);
+
+  fill(0);
+  ellipse(pt.x, pt.y, 10, 10);
+}
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

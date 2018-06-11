@@ -1,0 +1,21 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+
+  <polygon points="20,20 280,120 120,280" fill="#9464AA" stroke="black" stroke-width="2"/>
+  <polygon points="20,20 280,120 130,150" fill="#6499AA" stroke="black" stroke-width="2"/>
+  <polygon points="280,120 130,150 120,280" fill="#DB874F" stroke="black" stroke-width="2"/>
+
+  <text x="90" y="160" font-family="Verdana" font-size="18">Ab</text>
+  <text x="140" y="110" font-family="Verdana" font-size="18">Aa</text>
+  <text x="160" y="180" font-family="Verdana" font-size="18">Ac</text>
+
+  <text x="30" y="20" font-family="Verdana" font-size="18">c</text>
+  <text x="276" y="112" font-family="Verdana" font-size="18">b</text>
+  <text x="100" y="280" font-family="Verdana" font-size="18">a</text>
+  <text x="136" y="164" font-family="Verdana" font-size="18" fill="white">p</text>
+
+  <circle cx="20" cy="20" r="5" fill="black" />
+  <circle cx="280" cy="120" r="5" fill="black" />
+  <circle cx="120" cy="280" r="5" fill="black" />
+  <circle cx="130" cy="150" r="5" fill="white" />
+
+</svg>

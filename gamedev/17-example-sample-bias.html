@@ -1,0 +1,224 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.dom.js"></script>
+    <script>
+
+var pt;
+var mode = 1;
+var numPoints = 50;
+
+var lastMouseX;
+var lastMouseY;
+
+function setup() {
+  createCanvas(1000, 400);
+  background(230);
+
+  pt = createVector(-0.13, -0.2, -0.1);
+
+  // button = createButton('1');
+  // button.position(250, 35);
+  // button.mousePressed(mode1);
+
+  // button = createButton('2');
+  // button.position(300, 35);
+  // button.mousePressed(mode2);
+
+  // button = createButton('3');
+  // button.position(350, 35);
+  // button.mousePressed(mode3);
+}
+
+function mode1() {
+  mode = 1;
+}
+
+function mode2() {
+  mode = 2;
+}
+
+function mode3() {
+  mode = 3;
+}
+
+function keyPressed() {
+  console.log("keyPressed");
+  console.log(keyCode);
+  if (keyCode === 49) {
+    mode = 1;
+  }
+  else if (keyCode === 50) {
+    mode = 2;
+  }
+  else if (keyCode === 51) {
+    mode = 3;
+  }
+}
+
+function mousePressed() {
+  lastMouseX = mouseX;
+  lastMouseY = mouseY;
+
+  numPoints = mouseX * 2;
+}
+
+function mouseDragged() {
+  var offX = mouseX - lastMouseX;
+  var offY = mouseY - lastMouseY;
+  lastMouseX = mouseX;
+  lastMouseY = mouseY;
+
+  if (mode == 1) {
+    pt.x += offX / 200;
+  }
+  else if (mode == 2) {
+    pt.y += offX / 200;
+  }
+  else if (mode == 3) {
+    pt.z += offX / 200;
+  }
+}
+
+function clamp(a, low, high) {
+  if (a < low) {
+    return low;
+  } else if (a > high) {
+    return high;
+  } else {
+    return a;
+  }
+}
+
+function colorMap(t) {
+  var colors = [
+    color(0, 255, 0),
+    color(255, 255, 0),
+    color(250, 0, 0),
+  ];
+
+  var count = 3;
+  var scaled = t * (count - 1);
+  var index = floor(scaled);
+  var inbetween = scaled - index;
+
+  return lerpColor(
+    colors[clamp(index, 0, count - 1)],
+    colors[clamp(index + 1, 0, count - 1)],
+    inbetween);
+}
+
+function draw() {
+  background(230);
+
+
+  push();
+  stroke(63, 63, 63);
+  translate(180, 210);
+
+  var radius = 150.0;
+
+
+  var points = [];
+  randomSeed(123);
+  for (var i = 0; i < numPoints; ++ i) {
+    points.push(createVector(random(-1, 1), random(-1,1)));
+  }
+
+  strokeWeight(2);
+
+  for (var i = 0; i < 32; i ++) {
+    var angle = PI/16.0;
+
+    var count = 0;
+    for (var j = 0; j < numPoints; ++ j) {
+      var a = atan2(points[j].y, points[j].x) * -1 + PI / 2;
+
+      if (a < 0) {
+        a += 2 * PI;
+      }
+
+      if (a >= angle * i && a <= angle * (i + 1)) {
+        count = count + 1;
+      }
+    }
+
+    var t = pow((count * 32 / numPoints) * 0.5, 2.0) * (255 - 20);
+    var t2 = (count * 32 / numPoints) * 0.5;
+    var col = colorMap(t2);
+    // col = lerpColor(color(255, 0, 0), color(0,255,0), i / 32.0);
+
+
+    fill(col);
+
+    quad(
+      0, 20,
+      0, radius,
+      radius * sin(angle),
+      radius * cos(angle),
+      20 * sin(angle),
+      20 * cos(angle));
+    rotate(-angle);
+  }
+
+  var boxEdge = 2;
+
+  strokeWeight(2);
+  stroke(63, 63, 63, 128);
+  fill(0, 0, 0, 0);
+  rect(-radius-boxEdge, -radius-boxEdge, radius * 2+2*boxEdge, radius * 2+2*boxEdge);
+
+  translate(320, 0);
+  rect(-radius-boxEdge, -radius-boxEdge, radius * 2+2*boxEdge, radius * 2+2*boxEdge);
+
+  strokeWeight(4);
+  for (var i = 0; i < numPoints; ++ i) {
+    point(points[i].x * radius, points[i].y * radius);
+  }
+
+  translate(320, 0);
+  strokeWeight(2);
+  rect(-radius-boxEdge, -radius-boxEdge, radius * 2+2*boxEdge, radius * 2+2*boxEdge);
+
+  for (var i = 0; i < numPoints; ++ i) {
+    var length = sqrt(points[i].x * points[i].x + points[i].y * points[i].y);
+
+    strokeWeight(6);
+    stroke(63, 63, 63, 16);
+    point(points[i].x / length * radius, points[i].y / length * radius);
+
+    var scale = i / numPoints;
+    scale = lerp(0.1, 1.0, scale * scale);
+
+    strokeWeight(3);
+    stroke(121, 0, 0, 96);
+    point(points[i].x / length * radius * scale, points[i].y / length * radius * scale);
+  }
+
+  // set colors
+  strokeWeight(2);
+  stroke(63, 63, 63);
+
+
+  pop();
+
+
+
+  // text and options
+  resetMatrix();
+  noStroke();
+  textSize(28);
+  if (mode == 1) {
+    fill(160, 32, 32);
+  }
+  else {
+    fill(64);
+  }
+  text("sample count: " + numPoints, 300, 40);
+}
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

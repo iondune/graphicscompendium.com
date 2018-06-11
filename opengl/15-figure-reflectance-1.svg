@@ -1,0 +1,35 @@
+<svg width="600" height="270" viewBox="0 0 600 270" xmlns="http://www.w3.org/2000/svg">
+
+  <marker id="triangle"
+    viewBox="0 0 10 10" refX="0" refY="5"
+    markerUnits="strokeWidth"
+    markerWidth="4" markerHeight="3"
+    orient="auto">
+    <path d="M 0 0 L 10 5 L 0 10 z" />
+  </marker>
+
+  <text x="215" y="35" font-family="Verdana" font-size="30">
+    Light
+  </text>
+  <text x="200" y="58" font-family="Verdana" font-size="18">
+    Illumination
+  </text>
+
+  <text x="20" y="235" font-family="Verdana" font-size="30">
+    Object
+  </text>
+  <text x="20" y="255" font-family="Verdana" font-size="18">
+    Reflectance
+  </text>
+
+  <text x="320" y="235" font-family="Verdana" font-size="30">
+    Observer
+  </text>
+  <text x="320" y="255" font-family="Verdana" font-size="18">
+    Cone responses
+  </text>
+
+  <polyline points="245 70 90 195" marker-end="url(#triangle)" stroke="black" stroke-width="5"/>
+  <polyline points="130 225 300 225" marker-end="url(#triangle)" stroke="black" stroke-width="5"/>
+
+</svg>

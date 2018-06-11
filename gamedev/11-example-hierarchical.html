@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.dom.js"></script>
+    <script>
+
+var pt;
+var mode = 1;
+
+var lastMouseX;
+var lastMouseY;
+
+function setup() {
+  createCanvas(800, 400);
+  background(230);
+
+  pt = createVector(-0.13, -0.2, -0.1);
+
+  button = createButton('1');
+  button.position(250, 35);
+  button.mousePressed(mode1);
+
+  button = createButton('2');
+  button.position(300, 35);
+  button.mousePressed(mode2);
+
+  button = createButton('3');
+  button.position(350, 35);
+  button.mousePressed(mode3);
+}
+
+function mode1() {
+  mode = 1;
+}
+
+function mode2() {
+  mode = 2;
+}
+
+function mode3() {
+  mode = 3;
+}
+
+function keyPressed() {
+  console.log("keyPressed");
+  console.log(keyCode);
+  if (keyCode === 49) {
+    mode = 1;
+  }
+  else if (keyCode === 50) {
+    mode = 2;
+  }
+  else if (keyCode === 51) {
+    mode = 3;
+  }
+}
+
+function mousePressed() {
+  lastMouseX = mouseX;
+  lastMouseY = mouseY;
+}
+
+function mouseDragged() {
+  var offX = mouseX - lastMouseX;
+  var offY = mouseY - lastMouseY;
+  lastMouseX = mouseX;
+  lastMouseY = mouseY;
+
+  if (mode == 1) {
+    pt.x += offX / 200;
+  }
+  else if (mode == 2) {
+    pt.y += offX / 200;
+  }
+  else if (mode == 3) {
+    pt.z += offX / 200;
+  }
+}
+
+function draw() {
+  background(230);
+
+  // set colors
+  strokeWeight(2);
+  stroke(63, 63, 63);
+
+  // coordinate frame
+  scale(1, -1);
+  translate(0, -400);
+  translate(80, 160);
+  stroke(63, 63, 127);
+  line(-150, 0, 150, 0);
+  line(0, -150, 0, 150);
+
+
+  // upper-arm rectangle (red)
+  fill(204, 101, 101, 127);
+  stroke(127, 63, 63);
+
+  rotate(-pt.x);
+  line(-5, -5, 5, 5);
+  line(5, -5, -5, 5);
+  ellipse(0, 0, 16, 16); // anchor
+  push();
+    translate(100, 0);
+    rect(-100, -50, 200, 100); // box
+    scale(1, -1); // text
+    text("upper arm", -100 + 10, 0);
+  pop();
+
+  // lower-arm rectangle (green)
+  fill(101, 204, 101, 127);
+  stroke(63, 127, 63);
+
+  translate(200, 0);
+  rotate(-pt.y);
+  line(-5, -5, 5, 5);
+  line(5, -5, -5, 5);
+  ellipse(0, 0, 16, 16); // anchor
+  push();
+    translate(100, 0);
+    rect(-100, -40, 200, 80); // box
+    scale(1, -1); // text
+    text("lower arm", -100 + 10, 0);
+  pop();
+
+  // hand rectangle (blue)
+  fill(101, 101, 204, 127);
+  stroke(63, 63, 127);
+
+  translate(200, 0);
+  rotate(-pt.z);
+  line(-5, -5, 5, 5);
+  line(5, -5, -5, 5);
+  ellipse(0, 0, 16, 16); // anchor
+  push();
+    translate(75, 0);
+    rect(-75, -30, 150, 60); // box
+    scale(1, -1); // text
+    text("hand", -75 + 10, 0);
+  pop();
+
+
+  // text and options
+  resetMatrix();
+  noStroke();
+  textSize(28);
+  if (mode == 1) {
+    fill(160, 32, 32);
+  }
+  else {
+    fill(64);
+  }
+  text("rotation 1: " + pt.x.toFixed(2), 150, 100);
+  if (mode == 2) {
+    fill(160, 32, 32);
+  }
+  else {
+    fill(64);
+  }
+  text("rotation 2: " + pt.y.toFixed(2), 150, 130);
+  if (mode == 3) {
+    fill(160, 32, 32);
+  }
+  else {
+    fill(64);
+  }
+  text("rotation 3: " + pt.z.toFixed(2), 150, 160);
+}
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

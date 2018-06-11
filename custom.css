@@ -1,0 +1,102 @@
+
+/* Move down content because we have a fixed navbar that is ~50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.spacer {
+  padding-top: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.no-top-margin {
+  margin-top: 0;
+}
+
+.week-label {
+  padding-top: 75px;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+li > p {
+  font-size: 1em;
+}
+
+h2:before {
+  color: #000;
+  content:"\25AA";
+  margin-right: 6px;
+}
+
+h2:after {
+  content:' ';
+  display: block;
+  border: 2px solid #000;
+  margin-top: 4px;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.half {
+  max-width: 50%;
+}
+
+iframe
+{
+  border: none;
+}
+
+.navbar {
+  font-size: 16px;
+}
+
+.day-card {
+  margin-bottom: 1rem;
+}
+
+.quick-links-card {
+  margin-bottom: 1rem;
+}
+
+pre {
+  padding: 0.5rem;
+}
+
+:not(pre) > code {
+  background: #f4f4f4;
+  border-radius: 0.25rem;
+  padding: 0.2em;
+}
+
+/* table */
+
+.tbl-outline {
+  margin: 0 0 10.5px;
+}
+
+.tbl-outline td {
+  border: 1px solid black;
+  padding: 3px;
+}
+
+.tbl-outline th {
+  border: 1px solid black;
+  border-bottom: 2px solid black;
+  padding: 3px;
+  text-decoration: underline;
+}

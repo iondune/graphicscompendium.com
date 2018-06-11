@@ -1,0 +1,167 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script>
+
+
+var bbox_min = null;
+var bbox_max = null;
+
+var smallestMax = 0.0;
+var largestMin = 0.0;
+var tymin = 0.0;
+var tymax = 0.0;
+var txmin = 0.0;
+var txmax = 0.0;
+
+function FindIntersectTime(d, p0) {
+  tymin = (bbox_min.y - p0.y) / d.y;
+  tymax = (bbox_max.y - p0.y) / d.y;
+  txmin = (bbox_min.x - p0.x) / d.x;
+  txmax = (bbox_max.x - p0.x) / d.x;
+
+  if (tymin > tymax) {
+    var temp = tymin;
+    tymin = tymax;
+    tymax = temp;
+  }
+  if (txmin > txmax) {
+    var temp = txmin;
+    txmin = txmax;
+    txmax = temp;
+  }
+
+  smallestMax = min(txmax, tymax); // Smallest of maxs
+  largestMin = max(txmin, tymin); // Largest of mins
+
+  // If max of mins is < min of maxes, then miss
+  if (smallestMax < largestMin || smallestMax < 0) {
+    return -1;
+  }
+
+  if (largestMin > 0) {
+    return largestMin;
+  }
+  else {
+    return smallestMax;
+  }
+}
+
+var start_pos = null;
+var end_pos = null;
+
+function setup() {
+  createCanvas(800, 800);
+  background(230);
+
+  bbox_min = createVector(300.0, 300.0);
+  bbox_max = createVector(500.0, 500.0);
+
+  start_pos = createVector(100.0, 100.0);
+  end_pos = createVector(400.0, 300.0);
+}
+
+function mousePressed() {
+  if (mouseButton == LEFT) {
+    end_pos.x = mouseX;
+    end_pos.y = mouseY;
+  }
+  else if (mouseButton == RIGHT || mouseButton == CENTER) {
+    start_pos.x = mouseX;
+    start_pos.y = mouseY;
+  }
+
+  return false;
+}
+
+function mouseDragged() {
+  if (mouseButton == LEFT) {
+    end_pos.x = mouseX;
+    end_pos.y = mouseY;
+  }
+  else if (mouseButton == RIGHT || mouseButton == CENTER) {
+    start_pos.x = mouseX;
+    start_pos.y = mouseY;
+  }
+
+  return false;
+}
+
+function draw() {
+  var p_0 = start_pos;
+  var d = p5.Vector.sub(end_pos, start_pos);
+  d.normalize();
+  var tan = createVector(d.y, -d.x);
+
+  var t = FindIntersectTime(d, p_0);
+
+  background(230);
+
+  if (t > 0) {
+    stroke(100, 100, 100, 255);
+  }
+  else {
+    stroke(255, 255, 255, 255);
+  }
+  strokeWeight(4);
+  line(start_pos.x, start_pos.y, start_pos.x + d.x * 3000.0, start_pos.y + d.y * 3000.0);
+  line(end_pos.x, end_pos.y, end_pos.x + tan.x * 6.0 - d.x * 8.0, end_pos.y + tan.y * 8.0 - d.y * 8.0);
+  line(end_pos.x, end_pos.y, end_pos.x - tan.x * 6.0 - d.x * 8.0, end_pos.y - tan.y * 8.0 - d.y * 8.0);
+
+  stroke(0, 64, 222, 196);
+  strokeWeight(3);
+  line(-10000.0, bbox_min.y, 10000.0, bbox_min.y);
+  line(-10000.0, bbox_max.y, 10000.0, bbox_max.y);
+  line(bbox_min.x, -10000.0, bbox_min.x, 10000.0);
+  line(bbox_max.x, -10000.0, bbox_max.x, 10000.0);
+
+
+  strokeWeight(1);
+  stroke(63, 63, 127);
+  fill(0, 64, 222, 96);
+  rect(bbox_min.x, bbox_min.y, bbox_max.x - bbox_min.x, bbox_max.y - bbox_min.y);
+
+
+  stroke(63, 63, 127);
+  strokeWeight(2);
+  textSize(24);
+  var textBuffer = 12.0;
+
+  fill(42, 255, 42, 222); // green
+  ellipse(p_0.x + txmax * d.x, p_0.y + txmax * d.y, 13.0);
+  ellipse(p_0.x + tymax * d.x, p_0.y + tymax * d.y, 13.0);
+
+  fill(255, 42, 42, 222); // red
+  ellipse(p_0.x + txmin * d.x, p_0.y + txmin * d.y, 13.0);
+  ellipse(p_0.x + tymin * d.x, p_0.y + tymin * d.y, 13.0);
+
+  fill(255, 255, 255, 100);
+  ellipse(p_0.x + t * d.x, p_0.y + t * d.y, 20.0);
+
+  stroke(255, 255, 255, 200);
+  strokeWeight(4);
+  fill(42, 200, 42, 255);
+  text("smallest_max", p_0.x + smallestMax * d.x + textBuffer, p_0.y + smallestMax * d.y + textBuffer);
+  fill(200, 42, 42, 255);
+  text("largest_min", p_0.x + largestMin * d.x + textBuffer, p_0.y + largestMin * d.y + textBuffer);
+
+  if (t < 0) {
+    fill(200, 200, 42, 255);
+    text("no intersect", p_0.x + textBuffer, p_0.y);
+  }
+
+
+  textSize(18);
+  fill(64);
+  noStroke();
+  text("x min", bbox_min.x + 5, 30);
+  text("x max", bbox_max.x + 5, 30);
+  text("y min", 30, bbox_min.y + 20);
+  text("y max", 30, bbox_max.y + 20);
+}
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

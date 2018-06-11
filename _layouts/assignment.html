@@ -1,0 +1,21 @@
+---
+layout: page
+active: assignments
+---
+
+{% assign assignment = site.data.assignments[page.assignment] %}
+
+<h1>{{ assignment.title }} - {{ assignment.subtitle }}</h1>
+
+{% if assignment.github %}
+<p><a href="{{ assignment.github }}" class="btn btn-info">GitHub Classroom Assignment Page</a></p>
+{% endif %}
+
+{% if assignment.basecode %}
+<p><a href="{{ assignment.basecode }}" class="btn btn-success">The base code for this lab can be found on GitHub here</a>
+{% endif %}
+
+
+<p>This assignment is due on <strong>{{ assignment.due }}</strong>.</p>
+
+{{ content }}

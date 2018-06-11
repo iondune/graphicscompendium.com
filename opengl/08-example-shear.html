@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script>
+
+var pt;
+
+function setup() {
+  createCanvas(400, 400);
+  background(230);
+
+  pt = createVector(0.1, 1.0);
+}
+
+
+function mouseDragged() {
+  pt.x = 0.1 + mouseX / 400;
+  pt.y = 0.1 + (400 - mouseY) / 200;
+}
+
+function draw() {
+  background(230);
+
+  // Set colors
+  fill(204, 101, 192, 127);
+  strokeWeight(2);
+
+  // frame
+  scale(1, -1);
+  translate(0, -400);
+  translate(40, 40);
+  stroke(63, 63, 127);
+  line(0, 0, 200, 0);
+  line(0, 0, 0, 200);
+
+  // A rectangle
+  shearX(pt.x);
+  stroke(127, 63, 120);
+  rect(10, 10, 100, 200);
+
+
+  resetMatrix();
+  noStroke();
+  fill(64);
+  textSize(28);
+  text("shear x: " + (pt.x * 180 / 3.1416).toFixed(1) + String.fromCharCode(176), 150, 100);
+}
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

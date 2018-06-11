@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script>
+
+var rot = 0.0;
+var mode = 1;
+
+var lastMouseX;
+var lastMouseY;
+
+function setup() {
+  createCanvas(400, 400);
+  background(230);
+}
+
+function mousePressed() {
+  lastMouseX = mouseX;
+  lastMouseY = mouseY;
+}
+
+function mouseDragged() {
+  var offX = mouseX - lastMouseX;
+  var offY = mouseY - lastMouseY;
+  lastMouseX = mouseX;
+  lastMouseY = mouseY;
+
+  rot += offX / 200;
+}
+
+function radians(deg) {
+  return deg * 3.14159 / 180.0;
+}
+
+function draw() {
+  background(230);
+
+  // Set colors
+  strokeWeight(2);
+  stroke(63, 63, 63);
+
+  // frame
+  scale(1, -1);
+  translate(0, -400);
+  translate(200, 200);
+  stroke(63, 63, 127);
+  // line(-50, 0, 50, 0);
+  // line(0, -50, 0, 50);
+
+
+  rotate(-rot);
+
+
+  push();
+    translate(-75, 0);
+    rotate(radians(60));
+    scale(3, 0.25);
+
+    // red rectangle
+    fill(204, 101, 101, 127);
+    stroke(127, 63, 63);
+    rect(-50, -50, 100, 100);
+  pop();
+
+  push();
+    translate(75, 0);
+    rotate(radians(-60));
+    scale(3, 0.25);
+
+    // green rectangle
+    fill(101, 204, 101, 127);
+    stroke(63, 127, 63);
+    rect(-50, -50, 100, 100);
+  pop();
+
+  push();
+    translate(0, -20);
+    scale(1.25, 0.25);
+
+    // blue rectangle
+    fill(101, 101, 204, 127);
+    stroke(63, 63, 127);
+    rect(-50, -50, 100, 100);
+  pop();
+
+
+
+
+  resetMatrix();
+  noStroke();
+  textSize(28);
+  fill(64);
+  text("rotation: " + rot.toFixed(2), 15, 380);
+}
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
