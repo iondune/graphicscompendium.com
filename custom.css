@@ -17,8 +17,16 @@ body {
   margin-top: 0;
 }
 
-.week-label {
-  padding-top: 75px;
+
+
+.chapter-button {
+  border-radius: 0.3rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 p {

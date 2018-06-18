@@ -1,10 +1,10 @@
 ---
 layout: page
 active: lectures
-title: "Lectures"
-auto-title: true
+title: "OpenGL"
 ---
 
+# Chapters
 
 - [0 - Introduction](00-introduction)
 - [1 - The Graphics Pipeline](01-graphics-pipeline)
@@ -31,10 +31,4 @@ auto-title: true
 - [22 - Interpolation](22-interpolation)
 - [24 - Clipping, Culling, and Hidden Surface Removal](24-clipping-culling)
 - [25 - Final Project Grab Bag](25-final-project-grab-bag)
-
-
-## Planned
-
-- [14 - C++ 1](14-cpp-1)
-- [23 - C++ 2](23-cpp-2)
 - [?? - Homogenous Divide](nn-homogenous-divide)
