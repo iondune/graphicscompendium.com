@@ -2,20 +2,11 @@
 layout: page
 active: lectures
 title: "OpenGL"
+auto-title: true
 ---
 
-# Chapters
+## Chapters
 
-- [0 - Introduction](00-introduction)
-- [1 - The Graphics Pipeline](01-graphics-pipeline)
-- [2 - Coordinate Mapping](02-coordinate-mapping)
-- [3 - Lines and Planes](03-lines-and-planes)
-- [3 - Barycentric Coordinates](03-barycentric-coordinates)
-- [4 - Meshes](04-meshes)
-- [5 - Vectors](05-vectors)
-- [6 - Matrices](06-matrices)
-- [7 - Matrix Operations](07-matrix-operations)
-- [8 - Coordinate Transformations](08-transformations)
 - [9 - OpenGL Introduction](09-opengl-intro)
 - [10 - OpenGL Pipeline 1](10-opengl-pipeline-1)
 - [11 - OpenGL Pipeline 2](11-opengl-pipeline-2)
