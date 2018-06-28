@@ -6,7 +6,7 @@ title: "Raytracing"
 
 # Chapters
 
-- [0 - Introduction](00-introduction)
+- [1 - Introduction](01-introduction)
 - [2 - Camera](02-camera)
 - [3 - Spheres](03-spheres)
 - [4 - Planes](04-planes)

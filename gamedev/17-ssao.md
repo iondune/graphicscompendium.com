@@ -5,6 +5,7 @@ title: "Lecture 17: Screen-space Ambient Occlusion"
 auto-title: true
 ---
 
+Prerequisite: You should read the chapter on hemisphere sampling before reading this chapter.
 
 <a href="https://docs.google.com/presentation/d/1sjwh0nepIW6YCHtAqfGzrOtYYwjRZLBsmlPCJh70m1c/edit?usp=sharing" class="btn btn-info">Slide Deck</a>
 

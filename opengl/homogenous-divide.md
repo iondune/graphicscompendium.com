@@ -8,12 +8,8 @@ auto-title: true
 
 ## Outline
 
-Planned lecture on the topic of the homogenous divide including:
-
-This could also make more sense in 476.
-
-- Why it's necessary to have the w at all for perspective (can't we just divide by z?)
-  - i.e. the difference between w and z in clip space
+- Why it's necessary to have the `w` at all for perspective (can't we just divide by `z`?)
+  - i.e. the difference between `w` and `z` in clip space
 - Mathematics behind it (projected coordinate systems)
 - History behind left hand and right handed use in graphics (explanation of why OpenGL uses left-handed in clip space?)
 - Possibility of using a projection matrix with inifinite far

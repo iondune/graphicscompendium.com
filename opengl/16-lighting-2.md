@@ -5,9 +5,11 @@ title: "Lecture 16: Lighting and Shading 2 - Reflectance Modeling"
 auto-title: true
 ---
 
+Pre-requisites: You may want to read the theory chapter on Color Vision before starting this chapter.
+
 <a href="https://docs.google.com/presentation/d/12p68PGV0_iGpp5iei6tqa0ChdOcJ7vV9Ep17kpbSQ4E/edit?usp=sharing" class="btn btn-info">Slide Deck</a>
 
-When we ended the previous lecture, we said we needed to figure out how to represent reflectance.
+In this chapter, we needed to figure out how to represent reflectance.
 When light hits an object, some of it is absorbed and some of it is reflected.
 
 The manner in which light interacts with any given object is what gives the object its appearance.

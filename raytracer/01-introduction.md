@@ -1,11 +1,9 @@
 ---
 layout: page
 active: lectures
-title: "Lecture 0: Introduction & Orientation"
+title: "Lecture 1: Introduction"
 auto-title: true
 ---
-
-Read the syllabus!
 
 ## Review of OpenGL/Graphics
 
