@@ -68,46 +68,65 @@ $$ 0 \le y_p \le h - 1 $$
 
 <img src="01-figure-pixel-coordinates.png" alt="pixel coordinates" class="img-thumbnail" />
 
-We need a way to transform from world to pixel.
+We will need to find a way to transform from world coordinates to these pixel coordinates,
+but we'll cover that after we first introduce the main stages of the graphics pipeline.
 
 
 
-### General Graphics Pipeline
+## The Graphics Pipeline
+
+The Graphics Pipeline exists in a variety of forms depending on the type of computer graphics
+and rendering you are doing.
+
+What we'll introduce now is the rasterization pipeline used by OpenGL,
+which will be more or less what implement for our software rasterizer.
 
 <img src="01-figure-graphics-pipeline.png" alt="graphics pipeline" class="img-thumbnail" />
 
-**vertex array:** what are the vertices
+**vertex array:** what are the vertices?
 
-- input specification
+- input specification: the type of geometry we'll be rendering is specified,
+  in a form that is convenient for the rasterization process we're using.
 
 **vertex shader:** move to camera's perspective
 
-object space `-->` screen coordinates
+- world/object space &rarr; screen coordinates: we transform the coordinates of our input geometry
+  from world space to a new space that is aligned with the camera's persective.
 
 **rasterization:** which pixels are inside triangle?
 
+- Rasterization involves determining the pixels that a given primitive covers on the screen,
+  so that we can compute the colors of each covered pixel.
+
 **fragment shader:** what color is each pixel?
+
+- For each given pixel that is covered by the primitive, compute the expected color.
+  For starters we'll likely just color each pixel a specific color, e.g. red.
+  Later, the fragment shader may be used to perform more complicated per-pixel computations,
+  such as a lighting calculation to determine whether a pixel is brightly lit or dim.
 
 **testing and blending:** which pixels are visible?
 
+- At this point we need to perform what's called a **depth test** to determine whether a given
+  pixel has already been computed for a closer object. For any given perspective, some geometry
+  may be hidden by other geometry that's in front of it. We'll resolve this on a per-pixel basis,
+  after the rasterization stage.
 
 
 ## Software Rasterizer
 
+Our implementation of a software rasterizer will have four major stages.
+
 1. Read in triangles
-2. Convert triangls to windows coordinates
-3. Rasterize each triangle
-  - (use barycentric coordinates to test in-triangle AND interpolat colors)
+  - We'll have some way for the user of our software to specify what geometry
+    should be rendered. Initially, you may want to use simple command-line arguments,
+    though eventually we'll want a way to import triangle meshes from files.
+2. Convert triangels to windows coordinates
+  - We need to transform the 3D coordinates of each triangle vertex from world space
+    to window coordinates or pixel coordinates, so that they can be rasterized.
+3. Rasterize each triangle.
+  - Rasterization determines which pixels a given triangle covers in pixel space.
+  - We'll use barycentric coordinates to test whether a given point is inside the triangle,
+    and also to interpolate colors across the triangle (if different vertices have different colors)
 4. Write interpolated color values per pixel
-  (using a z-buffer test to resolve depth)
-
-### Labs
-
-#### Lab 1
-- Compute bounding box
-- Draw box and vertices
-
-#### Lab 2
-- Compute barycentric
-- Check is-interior?
-- Interpolate colors
+  - (using a z-buffer test to resolve depth comparisons)
