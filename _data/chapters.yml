@@ -3,52 +3,52 @@
 ## Introduction ##
 ##################
 
-- number: 0
+- number: 1
   part: intro
   file: 00-introduction
   title: Introduction
 
-- number: 1
+- number: 2
   part: intro
   file: 01-graphics-pipeline
   title: The Graphics Pipeline
 
-- number: 2
+- number: 3
   part: intro
   file: 02-coordinate-mapping
   title: Coordinate Mapping
 
-- number: 3
+- number: 4
   part: intro
   file: 03-lines-and-planes
   title: Lines and Planes
 
-- number: 3
+- number: 5
   part: intro
   file: 03-barycentric-coordinates
   title: Barycentric Coordinates
 
-- number: 4
+- number: 6
   part: intro
   file: 04-meshes
   title: Meshes
 
-- number: 5
+- number: 7
   part: intro
   file: 05-vectors
   title: Vectors
 
-- number: 6
+- number: 8
   part: intro
   file: 06-matrices
   title: Matrices
 
-- number: 7
+- number: 9
   part: intro
   file: 07-matrix-operations
   title: Matrix Operations
 
-- number: 8
+- number: 10
   part: intro
   file: 08-transformations
   title: Coordinate Transformations
@@ -58,77 +58,77 @@
 ## OpenGL ##
 ############
 
-- number: 9
+- number: 11
   part: opengl
   file: 09-opengl-intro
   title: OpenGL Introduction
 
-- number: 10
+- number: 12
   part: opengl
   file: 10-opengl-pipeline-1
   title: OpenGL Rectangle
 
-- number: 11
+- number: 13
   part: opengl
   file: 11-opengl-pipeline-2
   title: OpenGL Pipeline
 
-- number: 12
+- number: 14
   part: opengl
   file: 12-geometric-transforms
   title: Geometric Transformations
 
-- number: 13
+- number: 15
   part: opengl
   file: 13-hierarchical-modeling
   title: Hierarchical Transformations
 
-- number: 14
+- number: 16
   part: opengl
   file: 16-lighting-2
   title: "Reflectance Modeling"
 
-- number: 15
+- number: 17
   part: opengl
   file: 17-lighting-3
   title: "OpenGL Lighting"
 
-- number: 16
+- number: 18
   part: opengl
   file: 18-lookat-matrix
   title: Look-at Matrix
 
-- number: 17
+- number: 19
   part: opengl
   file: 19-textures
   title: Textures
 
-- number: 18
+- number: 20
   part: opengl
   file: 20-framebuffers
   title: Framebuffers
 
-- number: 19
+- number: 21
   part: opengl
   file: 21-texture-filtering
   title: Texture Filtering
 
-- number: 20
+- number: 22
   part: opengl
   file: 22-interpolation
   title: Interpolation
 
-- number: 21
+- number: 23
   part: opengl
   file: 24-clipping-culling
   title: Clipping, Culling, and Hidden Surface Removal
 
-- number: 22
+- number: 24
   part: opengl
   file: 25-final-project-grab-bag
   title: Advanced OpenGL
 
-- number: 23
+- number: 25
   part: opengl
   file: homogeneous-divide
   title: Homogeneous Divide
@@ -138,72 +138,72 @@
 ## Ray Tracing ##
 #################
 
-- number: 24
+- number: 26
   file: 01-introduction
   title: Ray Tracing
   part: raytracing
 
-- number: 25
+- number: 27
   file: 02-camera
   title: Camera
   part: raytracing
 
-- number: 26
+- number: 28
   file: 03-spheres
   title: Spheres
   part: raytracing
 
-- number: 27
+- number: 29
   file: 04-planes
   title: Planes
   part: raytracing
 
-- number: 28
+- number: 30
   file: 06-lighting
   title: Lighting
   part: raytracing
 
-- number: 29
+- number: 31
   file: 09-triangles
   title: Triangles
   part: raytracing
 
-- number: 30
+- number: 32
   file: 10-reflection-refraction
   title: Reflection and Refraction
   part: raytracing
 
-- number: 31
+- number: 33
   file: 11-fresnel-beer
   title: Fresnel and Beer's Law
   part: raytracing
 
-- number: 32
+- number: 34
   file: 12-transformations
   title: Transformations
   part: raytracing
 
-- number: 33
+- number: 35
   file: 13-normal-matrix
   title: Normal Matrix
   part: raytracing
 
-- number: 34
+- number: 36
   file: 16-boxes
   title: Boxes
   part: raytracing
 
-- number: 35
+- number: 37
   file: 17-spatial-data-structures
   title: Spatial Data Structures
   part: raytracing
 
-- number: 36
+- number: 38
   file: 19-monte-carlo
   title: Monte Carlo Ray Tracing
   part: raytracing
 
-- number: 37
+- number: 39
   file: 20-final-project
   title: Advanced Ray Tracing
   part: raytracing
@@ -213,67 +213,67 @@
 ## Game Dev ##
 ##############
 
-- number: 38
+- number: 40
   file: 00-gamedev
   title: Game Development
   part: gamedev
 
-- number: 39
+- number: 41
   file: 01-game-genres
   title: Game Genres
   part: gamedev
 
-- number: 40
+- number: 42
   file: 04-time-steps
   title: Simulation Time Steps
   part: gamedev
 
-- number: 41
+- number: 43
   file: 11-animation-intro
   title: Basics of Animation
   part: gamedev
 
-- number: 42
+- number: 44
   file: 12-rotation
   title: Rotation Representations
   part: gamedev
 
-- number: 43
+- number: 45
   file: 13-culling
   title: Culling Techniques
   part: gamedev
 
-- number: 44
+- number: 46
   file: 14-advanced-texturing
   title: Advanced Texturing
   part: gamedev
 
-- number: 45
+- number: 47
   file: 15-pbr
   title: Physically-Based Rendering
   part: gamedev
 
-- number: 46
+- number: 48
   file: 16-shadows
   title: Shadows
   part: gamedev
 
-- number: 47
+- number: 49
   file: 17-ssao
   title: Screen-space Ambient Occlusion
   part: gamedev
 
-- number: 48
+- number: 50
   file: 18-spatial-data-structures
   title: Spatial Data Structures
   part: gamedev
 
-- number: 49
+- number: 51
   file: 19-character-animation
   title: Character Animation
   part: gamedev
 
-- number: 50
+- number: 52
   file: xx-directx
   title: Porting to DirectX
   part: gamedev
@@ -283,57 +283,57 @@
 ## Software ##
 ##############
 
-- number: 51
+- number: 53
   file: 14-cpp-1
   title: C++ 1
   part: software
 
-- number: 52
+- number: 54
   file: 23-cpp-2
   title: C++ 2
   part: software
 
-- number: 53
+- number: 55
   file: 01-cpp1
   title: C++ 3
   part: software
 
-- number: 54
+- number: 56
   file: 05-cpp2
   title: C++ 4
   part: software
 
-- number: 55
+- number: 57
   file: 21-cpp3
   title: C++ 5
   part: software
 
-- number: 56
+- number: 58
   file: 05-iterative-prototyping
   title: Iterative Prototyping
   part: software
 
-- number: 57
+- number: 59
   file: 06-git-branching
   title: Git Branching Models
   part: software
 
-- number: 58
+- number: 60
   file: 07-software-design
   title: Software Design
   part: software
 
-- number: 59
+- number: 61
   file: 08-object-oriented-design
   title: Object-Oriented Design
   part: software
 
-- number: 60
+- number: 62
   file: 09-data-oriented-design
   title: Data-Oriented Design
   part: software
 
-- number: 61
+- number: 63
   file: 10-game-patterns
   title: Game Programming Patterns
   part: software
@@ -343,32 +343,32 @@
 ## Theory ##
 ############
 
-- number: 62
+- number: 64
   file: 14-exterior-algebra
   title: Exterior Algebra
   part: theory
 
-- number: 63
+- number: 65
   file: 15-anti-aliasing
   title: Anti-Aliasing
   part: theory
 
-- number: 64
+- number: 66
   file: 15-lighting-1
   title: Color and Vision
   part: theory
 
-- number: 65
+- number: 67
   file: 18-light-theory
   title: Light Theory
   part: theory
 
-- number: 66
+- number: 68
   file: 07-cook-torrance
   title: Cook-Torrance
   part: theory
 
-- number: 67
+- number: 69
   file: 08-cook-torrance-ggx
   title: Cook-Torrance GGX
   part: theory
@@ -379,22 +379,22 @@
 ## References ##
 ################
 
-- number: 68
+- number: 70
   file: git
   title: Git
   part: references
 
-- number: 69
+- number: 71
   file: cook-torrance
   title: Cook-Torrance
   part: references
 
-- number: 70
+- number: 72
   file: bash-snippets
   title: Bash Snippets
   part: references
 
-- number: 71
+- number: 73
   file: cpp-snippets
   title: C++ Snippets
   part: references
