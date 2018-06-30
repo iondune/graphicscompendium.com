@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 14: Exterior Algebra"
-auto-title: true
+layout: chapter
+file: 14-exterior-algebra
 ---
 
 **Exterior Algebra** is the basis for the geometric algebra we use in computer graphics.

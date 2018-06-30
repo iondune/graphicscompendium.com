@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 9: Data-Oriented Design"
-auto-title: true
+layout: chapter
+file: 09-data-oriented-design
 ---
 
 

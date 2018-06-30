@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 15: Lighting and Shading 1 - Color and Vision"
-auto-title: true
+layout: chapter
+file: 15-lighting-1
 ---
 
 <a href="https://docs.google.com/presentation/d/1h7SDIqSg65Dhmk5JUjy2eDYeFzDlshwJR6g7AbW9rzs/edit?usp=sharing" class="btn btn-info">Color Vision Slides</a>

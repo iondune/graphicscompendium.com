@@ -1,8 +1,6 @@
 ---
-layout: page
-active: references
-title: "Bash Snippets"
-auto-title: true
+layout: chapter
+file: bash-snippets
 ---
 
 ## Use a file as the arguments for some program

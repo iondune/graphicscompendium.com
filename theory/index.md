@@ -2,11 +2,11 @@
 layout: page
 active: theory
 title: "Theory"
+auto-title: true
 ---
 
-# Chapters
+In this part, we take a closer look at the mathematics behind a few graphics topics.
 
-- [14 - Exterior Algebra](14-exterior-algebra)
-- [15 - Anti-Aliasing](15-anti-aliasing)
-- [15 - Lighting 1: Color and Vision](15-lighting-1)
-- [18 - Light Theory](18-light-theory)
+## Chapters
+
+{% include chapter-list.html part="theory" %}

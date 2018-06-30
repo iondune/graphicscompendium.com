@@ -4,8 +4,7 @@ file: 00-gamedev
 ---
 
 
-<a href="https://docs.google.com/presentation/d/1RGD4st6F9-GlvgijIMWyA3J9Rdj8T_6ikbtW7QPRIf4/edit?usp=sharing" class="btn btn-info">Slide Deck</a>
-<a href="https://drive.google.com/file/d/1szFqFMXgwGhsneo5m6VzIMx0QfGI-YPM/view?usp=sharing" class="btn btn-info">Example Pitches</a>
+<a href="https://docs.google.com/presentation/d/1RGD4st6F9-GlvgijIMWyA3J9Rdj8T_6ikbtW7QPRIf4/edit?usp=sharing" class="btn btn-primary">Slide Deck</a>
 
 ## Games Are Difficult
 

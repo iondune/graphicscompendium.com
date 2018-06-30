@@ -22,8 +22,8 @@ active: home
 
 <div class="container" id="content">
 
-  <div class="card quick-links-card border-success">
-    <div class="card-header text-white bg-success">
+  <div class="card quick-links-card border-primary">
+    <div class="card-header text-white bg-primary">
       Welcome
     </div>
     <div class="card-body">
@@ -40,5 +40,15 @@ active: home
       </p>
     </div>
   </div>
+
+  <h3>Chapter List</h3>
+
+  <ul>
+{%- for chapter in site.data.chapters %}
+{%- assign parts = site.data.parts | where: "name", chapter.part %}
+{%- assign part = parts[0] %}
+    <li><span class="item-tag bg-{{ part.color }}">{{ part.title }}</span> <a href="{{ site.baseurl }}/{{ chapter.part }}/{{ chapter.file }}">{{ chapter.number }} - {{ chapter.title }}</a></li>
+{%- endfor %}
+  </ul>
 
 </div>

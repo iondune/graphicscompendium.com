@@ -1,8 +1,6 @@
 ---
-layout: page
-active: references
-title: "Cook-Torrance Components"
-auto-title: true
+layout: chapter
+file: cook-torrance
 ---
 
 General form of the Cook-Torrance shading model:

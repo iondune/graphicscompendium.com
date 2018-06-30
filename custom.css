@@ -32,6 +32,16 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.item-tag {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  /*font-weight: bold;*/
+
+  color: white;
+  border-radius: 0.25rem;
+  padding: 0.1em 0.3em;
+}
+
 p {
   font-size: 1.1em;
 }

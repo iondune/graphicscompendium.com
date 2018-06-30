@@ -1,8 +1,6 @@
 ---
-layout: page
-active: references
-title: "C++ Snippets"
-auto-title: true
+layout: chapter
+file: cpp-snippets
 ---
 
 ## Read entire file into string

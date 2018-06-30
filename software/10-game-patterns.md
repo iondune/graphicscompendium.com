@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 10: Game Design Patterns"
-auto-title: true
+layout: chapter
+file: 10-game-patterns
 ---
 
 

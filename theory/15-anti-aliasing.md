@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 15: Anti-Aliasing"
-auto-title: true
+layout: chapter
+file: 15-anti-aliasing
 ---
 
 [Slide Deck](https://docs.google.com/presentation/d/1QQX93-7boqMMRny6YIr4PC0r3gurClO07pdA262SoMU/edit?usp=sharing){:class="btn btn-info"}

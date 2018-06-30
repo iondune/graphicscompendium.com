@@ -2,11 +2,11 @@
 layout: default
 ---
 
-{% assign chapters = site.data.chapters | where: "file", page.file %}
-{% assign chapter = chapters[0] %}
+{%- assign chapters = site.data.chapters | where: "file", page.file %}
+{%- assign chapter = chapters[0] %}
 
-{% assign parts = site.data.parts | where: "name", chapter.part %}
-{% assign part = parts[0] %}
+{%- assign parts = site.data.parts | where: "name", chapter.part %}
+{%- assign part = parts[0] %}
 
 <div class="spacer" id="spacer"></div>
 
@@ -25,7 +25,7 @@ layout: default
 {%- assign num = chapter.number | plus: 1 %}
 {%- assign next = site.data.chapters | where: "number", num %}
 
-{%- if next %}
+{%- if next[0] %}
   <a class="btn chapter-button bg-{{ part.color }} float-right" href="{{ site.baseurl }}/{{ next[0].part }}/{{ next[0].file }}">{{ next[0].title }} &rarr;</a>
 {%- endif %}
 </div>

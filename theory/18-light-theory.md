@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 18: Light Theory"
-auto-title: true
+layout: chapter
+file: 18-light-theory
 ---
 
 

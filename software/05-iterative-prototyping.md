@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 5: Iterative Prototyping"
-auto-title: true
+layout: chapter
+file: 05-iterative-prototyping
 ---
 
 

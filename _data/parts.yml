@@ -33,3 +33,9 @@
   fullname: Theory and Fundamentals
   link: /theory
   color: yellow
+
+- name: references
+  title: References
+  fullname: References
+  link: /references
+  color: pink

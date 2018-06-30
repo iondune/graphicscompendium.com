@@ -1,8 +1,6 @@
 ---
-layout: page
-active: references
-title: "Using Git"
-auto-title: true
+layout: chapter
+file: git
 ---
 
 Git is not a graphics topic, but it is a software engineering topic.

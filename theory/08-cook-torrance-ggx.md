@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 8: Cook-Torrance GGX"
-auto-title: true
+layout: chapter
+file: 08-cook-torrance-ggx
 ---
 
 

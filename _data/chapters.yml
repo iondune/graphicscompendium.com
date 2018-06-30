@@ -66,12 +66,12 @@
 - number: 10
   part: opengl
   file: 10-opengl-pipeline-1
-  title: OpenGL Pipeline 1
+  title: OpenGL Rectangle
 
 - number: 11
   part: opengl
   file: 11-opengl-pipeline-2
-  title: OpenGL Pipeline 2
+  title: OpenGL Pipeline
 
 - number: 12
   part: opengl
@@ -86,17 +86,17 @@
 - number: 14
   part: opengl
   file: 16-lighting-2
-  title: "Lighting 2: Reflectance Modeling"
+  title: "Reflectance Modeling"
 
 - number: 15
   part: opengl
   file: 17-lighting-3
-  title: "Lighting 3: Details and Wrapup"
+  title: "OpenGL Lighting"
 
 - number: 16
   part: opengl
   file: 18-lookat-matrix
-  title: Lookat Matrix
+  title: Look-at Matrix
 
 - number: 17
   part: opengl
@@ -126,7 +126,7 @@
 - number: 22
   part: opengl
   file: 25-final-project-grab-bag
-  title: Final Project Grab Bag
+  title: Advanced OpenGL
 
 - number: 23
   part: opengl
@@ -283,19 +283,119 @@
 ## Software ##
 ##############
 
+- number: 51
+  file: 14-cpp-1
+  title: C++ 1
+  part: software
+
+- number: 52
+  file: 23-cpp-2
+  title: C++ 2
+  part: software
+
+- number: 53
+  file: 01-cpp1
+  title: C++ 3
+  part: software
+
+- number: 54
+  file: 05-cpp2
+  title: C++ 4
+  part: software
+
+- number: 55
+  file: 21-cpp3
+  title: C++ 5
+  part: software
+
+- number: 56
+  file: 05-iterative-prototyping
+  title: Iterative Prototyping
+  part: software
+
+- number: 57
+  file: 06-git-branching
+  title: Git Branching Models
+  part: software
+
+- number: 58
+  file: 07-software-design
+  title: Software Design
+  part: software
+
+- number: 59
+  file: 08-object-oriented-design
+  title: Object-Oriented Design
+  part: software
+
+- number: 60
+  file: 09-data-oriented-design
+  title: Data-Oriented Design
+  part: software
+
+- number: 61
+  file: 10-game-patterns
+  title: Game Programming Patterns
+  part: software
+
 
 ############
 ## Theory ##
 ############
 
-- number: 101
+- number: 62
+  file: 14-exterior-algebra
+  title: Exterior Algebra
+  part: theory
+
+- number: 63
+  file: 15-anti-aliasing
+  title: Anti-Aliasing
+  part: theory
+
+- number: 64
+  file: 15-lighting-1
+  title: Color and Vision
+  part: theory
+
+- number: 65
+  file: 18-light-theory
+  title: Light Theory
+  part: theory
+
+- number: 66
   file: 07-cook-torrance
   title: Cook-Torrance
-  part: raytracing
+  part: theory
 
-- number: 102
+- number: 67
   file: 08-cook-torrance-ggx
   title: Cook-Torrance GGX
-  part: raytracing
+  part: theory
 
+
+
+################
+## References ##
+################
+
+- number: 68
+  file: git
+  title: Git
+  part: references
+
+- number: 69
+  file: cook-torrance
+  title: Cook-Torrance
+  part: references
+
+- number: 70
+  file: bash-snippets
+  title: Bash Snippets
+  part: references
+
+- number: 71
+  file: cpp-snippets
+  title: C++ Snippets
+  part: references
 

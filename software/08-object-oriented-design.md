@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 8: Object-Oriented Design"
-auto-title: true
+layout: chapter
+file: 08-object-oriented-design
 ---
 
 
