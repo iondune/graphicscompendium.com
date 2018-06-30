@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 17: Lighting and Shading 3 - Details and Wrapup"
-auto-title: true
+layout: chapter
+file: 17-lighting-3
 ---
 
 ## Surface Normals

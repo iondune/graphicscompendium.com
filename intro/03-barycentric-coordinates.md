@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 3: Barycentric Coordinates"
-auto-title: true
+layout: chapter
+file: 03-barycentric-coordinates
 p5: true
 ---
 

@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 24: Clipping, Culling, and Hidden-Surface Removal"
-auto-title: true
+layout: chapter
+file: 24-clipping-culling
 ---
 
 Graphics Pipeline Review

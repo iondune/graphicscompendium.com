@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 5: Vectors"
-auto-title: true
+layout: chapter
+file: 05-vectors
 ---
 
 ## Basics

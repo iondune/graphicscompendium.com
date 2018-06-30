@@ -1,0 +1,137 @@
+
+##################
+## Introduction ##
+##################
+
+- number: 0
+  part: intro
+  file: 00-introduction
+  title: Introduction
+
+- number: 1
+  part: intro
+  file: 01-graphics-pipeline
+  title: The Graphics Pipeline
+
+- number: 2
+  part: intro
+  file: 02-coordinate-mapping
+  title: Coordinate Mapping
+
+- number: 3
+  part: intro
+  file: 03-lines-and-planes
+  title: Lines and Planes
+
+- number: 3
+  part: intro
+  file: 03-barycentric-coordinates
+  title: Barycentric Coordinates
+
+- number: 4
+  part: intro
+  file: 04-meshes
+  title: Meshes
+
+- number: 5
+  part: intro
+  file: 05-vectors
+  title: Vectors
+
+- number: 6
+  part: intro
+  file: 06-matrices
+  title: Matrices
+
+- number: 7
+  part: intro
+  file: 07-matrix-operations
+  title: Matrix Operations
+
+- number: 8
+  part: intro
+  file: 08-transformations
+  title: Coordinate Transformations
+
+
+############
+## OpenGL ##
+############
+
+- number: 9
+  part: opengl
+  file: 09-opengl-intro
+  title: OpenGL Introduction
+
+- number: 10
+  part: opengl
+  file: 10-opengl-pipeline-1
+  title: OpenGL Pipeline 1
+
+- number: 11
+  part: opengl
+  file: 11-opengl-pipeline-2
+  title: OpenGL Pipeline 2
+
+- number: 12
+  part: opengl
+  file: 12-geometric-transforms
+  title: Geometric Transformations
+
+- number: 13
+  part: opengl
+  file: 13-hierarchical-modeling
+  title: Hierarchical Transformations
+
+- number: 14
+  part: opengl
+  file: 16-lighting-2
+  title: "Lighting 2: Reflectance Modeling"
+
+- number: 15
+  part: opengl
+  file: 17-lighting-3
+  title: "Lighting 3: Details and Wrapup"
+
+- number: 16
+  part: opengl
+  file: 18-lookat-matrix
+  title: Lookat Matrix
+
+- number: 17
+  part: opengl
+  file: 19-textures
+  title: Textures
+
+- number: 18
+  part: opengl
+  file: 20-framebuffers
+  title: Framebuffers
+
+- number: 19
+  part: opengl
+  file: 21-texture-filtering
+  title: Texture Filtering
+
+- number: 20
+  part: opengl
+  file: 22-interpolation
+  title: Interpolation
+
+- number: 21
+  part: opengl
+  file: 24-clipping-culling
+  title: Clipping, Culling, and Hidden Surface Removal
+
+- number: 22
+  part: opengl
+  file: 25-final-project-grab-bag
+  title: Final Project Grab Bag
+
+- number: 23
+  part: opengl
+  file: homogeneous-divide
+  title: Homogeneous Divide
+
+
+

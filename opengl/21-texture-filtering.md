@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 21: Texture Filtering"
-auto-title: true
+layout: chapter
+file: 21-texture-filtering
 ---
 
 

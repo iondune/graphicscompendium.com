@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 3: Lines and Planes"
-auto-title: true
+layout: chapter
+file: 03-lines-and-planes
 ---
 
 

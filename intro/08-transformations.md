@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 8: Coordinate Transformations"
-auto-title: true
+layout: chapter
+file: 08-transformations
 p5: true
 ---
 
@@ -20,7 +18,7 @@ Such a transformation can be used to **scale**, **shear**, and **rotate** a vect
 ## Scale
 
 <div id="example1">
-  <iframe id="exampleFrame1" src="08-example-scale.html" width="420px" height="420px"></iframe>
+  <iframe id="exampleFrame1" src="examples/scale.html" width="420px" height="420px"></iframe>
 </div>
 
 ### Matrix formulation:
@@ -32,7 +30,7 @@ $$ A = \begin{bmatrix}s_x & 0\\s_y & 0\end{bmatrix} $$
 ## Shear
 
 <div id="example2">
-  <iframe id="exampleFrame2" src="08-example-shear.html" width="420px" height="420px"></iframe>
+  <iframe id="exampleFrame2" src="examples/shear.html" width="420px" height="420px"></iframe>
 </div>
 
 ### Matrix formulation:
@@ -44,7 +42,7 @@ $$ A = \begin{bmatrix}1 & tan \theta\\0 & 1\end{bmatrix} $$
 ## Rotation
 
 <div id="example3">
-  <iframe id="exampleFrame3" src="08-example-rotate.html" width="420px" height="420px"></iframe>
+  <iframe id="exampleFrame3" src="examples/rotate.html" width="420px" height="420px"></iframe>
 </div>
 
 ### Matrix formulation:

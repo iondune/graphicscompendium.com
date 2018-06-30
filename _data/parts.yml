@@ -1,29 +1,35 @@
-- name: Intro
+- name: intro
+  title: Intro
   fullname: Introduction
   link: /intro
   color: red
 
-- name: Software
-  fullname: Software Design and C++
-  link: /software
-  color: green
-
-- name: OpenGL
+- name: opengl
+  title: OpenGL
   fullname: Real-Time Rendering in OpenGL
   link: /opengl
   color: purple
 
-- name: Raytracing
+- name: raytracing
+  title: Raytracing
   fullname: Reflection and Illumination through Ray-Tracing
   link: /raytracer
   color: orange
 
-- name: Gamedev
+- name: gamedev
+  title: Gamedev
   fullname: Game Development
   link: /gamedev
   color: blue
 
-- name: Theory
+- name: software
+  title: Software
+  fullname: Software Design and C++
+  link: /software
+  color: green
+
+- name: theory
+  title: Theory
   fullname: Theory and Fundamentals
   link: /theory
   color: yellow

@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 19: Textures"
-auto-title: true
+layout: chapter
+file: 19-textures
 ---
 
 <a href="https://docs.google.com/presentation/d/12p68PGV0_iGpp5iei6tqa0ChdOcJ7vV9Ep17kpbSQ4E/edit?usp=sharing" class="btn btn-info">

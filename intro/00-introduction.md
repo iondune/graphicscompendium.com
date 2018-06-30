@@ -1,13 +1,7 @@
 ---
-layout: page
-active: lectures
-title: "Chapter 0: Introduction"
-auto-title: true
+layout: chapter
+file: 00-introduction
 ---
-
-
-<a href="https://docs.google.com/presentation/d/1D_htUiKc0UhsAPWfNC6GqLFaIGWDT9Q0uGryFbODB9s/edit?usp=sharing" class="btn btn-info">Slide Deck</a>
-<a href="https://docs.google.com/presentation/d/1-M4FVo_CUWjC2PGK8w-ykNfbrTZ7kw8ux8bAO1AVE44/edit?usp=sharing" class="btn btn-info">Slide Deck - Dr. Sueda</a>
 
 Throughout this entire book we will be using C++.
 C++ is the primary language used for computer graphics.
@@ -70,7 +64,7 @@ But it's common usage and it does make sense in some respects, so we're going to
 If you're wondering a little bit more about what exactly a GPU is,
 you can think of it is a processor that has a lot of cores which are not very fast.
 
-<img src="00-figure-cpu-vs-gpu.png" alt="cpu vs gpu" class="img-thumbnail" />
+<img src="figures/cpu-vs-gpu.png" alt="cpu vs gpu" class="img-thumbnail" />
 
 While a fast, modern CPU might have four cores that run at, say, 2.5GHz,
 a modern GPU might have 1500 cores that run at 750MHz.

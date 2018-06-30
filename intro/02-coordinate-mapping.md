@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 2: Coordinate Mapping"
-auto-title: true
+layout: chapter
+file: 02-coordinate-mapping
 ---
 
 

@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 20: Framebuffers"
-auto-title: true
+layout: chapter
+file: 20-framebuffers
 ---
 
 

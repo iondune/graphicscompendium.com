@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 4: Meshes"
-auto-title: true
+layout: chapter
+file: 04-meshes
 ---
 
 A **mesh** is generally just a set of polygons, with some associated data such as color, which we render.

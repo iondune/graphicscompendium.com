@@ -18,11 +18,14 @@ body {
 }
 
 
-
-.chapter-button {
+.part-button {
   border-radius: 0.3rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.chapter-button {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .navbar-dark .navbar-nav .nav-link {

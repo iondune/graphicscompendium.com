@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 10: OpenGL Pipeline 1"
-auto-title: true
+layout: chapter
+file: 10-opengl-pipeline-1
 ---
 
 In this lecture we will modify the base code for Lab 3 to draw an animated, colored rectangle.

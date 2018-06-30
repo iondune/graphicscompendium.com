@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 25: Final Project Grab-Bag"
-auto-title: true
+layout: chapter
+file: 25-final-project-grab-bag
 ---
 
 <a href="https://drive.google.com/open?id=1Qkcfy328nOsn2LFyM0ba2NaI1Ri0lCPSIAymPs29xL4" class="btn btn-info">Skinned Meshes, Terrain, Skyboxes</a>

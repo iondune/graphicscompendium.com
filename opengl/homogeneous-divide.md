@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture ??: Homegenous Divide"
-auto-title: true
+layout: chapter
+file: homogeneous-divide
 ---
 
 

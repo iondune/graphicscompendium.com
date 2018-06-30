@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 22: Interpolation"
-auto-title: true
+layout: chapter
+file: 22-interpolation
 ---
 
 Note that many figures from this presentation come from

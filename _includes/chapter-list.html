@@ -1,0 +1,8 @@
+
+{% assign chapters = site.data.chapters | where: "part", include.part %}
+
+<ul>
+{% for chapter in chapters %}
+  <li><a href="{{ chapter.file }}">{{ chapter.number }} - {{ chapter.title }}</a></li>
+{% endfor %}
+</ul>

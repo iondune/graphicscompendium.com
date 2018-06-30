@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 9: OpenGL Introduction"
-auto-title: true
+layout: chapter
+file: 09-opengl-intro
 ---
 
 

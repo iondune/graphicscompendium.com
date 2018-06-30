@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Chapter 1: The Graphics Pipeline"
-auto-title: true
+layout: chapter
+file: 01-graphics-pipeline
 ---
 
 
@@ -46,7 +44,7 @@ but we'll discuss this later.
 In our rasterizers, our task will be to take triangles with coordinates stored in world space,
 and transform them into pixels that we can color on the screen.
 
-<img src="01-figure-coordinate-frame.png" alt="coordinate frame" class="img-thumbnail" />
+<img src="figures/coordinate-frame.png" alt="coordinate frame" class="img-thumbnail" />
 
 ## Types of Geometry
 
@@ -66,7 +64,7 @@ $$ 0 \le x_p \le w - 1 $$
 
 $$ 0 \le y_p \le h - 1 $$
 
-<img src="01-figure-pixel-coordinates.png" alt="pixel coordinates" class="img-thumbnail" />
+<img src="figures/pixel-coordinates.png" alt="pixel coordinates" class="img-thumbnail" />
 
 We will need to find a way to transform from world coordinates to these pixel coordinates,
 but we'll cover that after we first introduce the main stages of the graphics pipeline.
@@ -81,7 +79,7 @@ and rendering you are doing.
 What we'll introduce now is the rasterization pipeline used by OpenGL,
 which will be more or less what implement for our software rasterizer.
 
-<img src="01-figure-graphics-pipeline.png" alt="graphics pipeline" class="img-thumbnail" />
+<img src="figures/graphics-pipeline.png" alt="graphics pipeline" class="img-thumbnail" />
 
 **vertex array:** what are the vertices?
 

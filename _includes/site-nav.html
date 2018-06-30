@@ -14,11 +14,11 @@
     <!-- Course Tabs -->
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="chapter-button bg-grey nav-link" href="{{ '/index.html' | prepend: site.baseurl }}">Home</a>
+        <a class="part-button bg-grey nav-link" href="{{ '/index.html' | prepend: site.baseurl }}">Home</a>
       </li>
 {% for part in site.data.parts %}
       <li {% if page.part == part.name %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
-        <a class="chapter-button bg-{{ part.color }} nav-link" href="{{ part.link | prepend: site.baseurl }}">{{ part.name }}</a>
+        <a class="part-button bg-{{ part.color }} nav-link" href="{{ part.link | prepend: site.baseurl }}">{{ part.title }}</a>
       </li>
 {% endfor %}
     </ul>

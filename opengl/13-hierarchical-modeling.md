@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 13: Hierarchical Modeling"
-auto-title: true
+layout: chapter
+file: 13-hierarchical-modeling
 p5: true
 ---
 

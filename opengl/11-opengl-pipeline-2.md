@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 11: OpenGL Pipeline 2"
-auto-title: true
+layout: chapter
+file: 11-opengl-pipeline-2
 ---
 
 In this lecture we will modify the base code for Lab 3 to draw two objects, with two VAOs and two shaders.

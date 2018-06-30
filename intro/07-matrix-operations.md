@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 7: Matrix Operations"
-auto-title: true
+layout: chapter
+file: 07-matrix-operations
 ---
 
 

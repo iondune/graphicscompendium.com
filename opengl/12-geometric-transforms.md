@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 12: Geometric Transforms"
-auto-title: true
+layout: chapter
+file: 12-geometric-transforms
 ---
 
 ## Composite Transformations

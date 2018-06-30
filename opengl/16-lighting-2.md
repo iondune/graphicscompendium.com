@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 16: Lighting and Shading 2 - Reflectance Modeling"
-auto-title: true
+layout: chapter
+file: 16-lighting-2
 ---
 
 Pre-requisites: You may want to read the theory chapter on Color Vision before starting this chapter.

@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 6: Matrices"
-auto-title: true
+layout: chapter
+file: 06-matrices
 ---
 
 A **matrix** is an array of elements that follow certain rules:
