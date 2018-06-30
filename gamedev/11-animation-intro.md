@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 11: Introduction to Animation"
-auto-title: true
+layout: chapter
+file: 11-animation-intro
 ---
 
 

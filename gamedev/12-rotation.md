@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 12: Rotation Representations"
-auto-title: true
+layout: chapter
+file: 12-rotation
 ---
 
 

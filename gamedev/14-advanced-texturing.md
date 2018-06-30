@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 14: Advanced Texturing"
-auto-title: true
+layout: chapter
+file: 14-advanced-texturing
 ---
 
 

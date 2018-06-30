@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 17: Screen-space Ambient Occlusion"
-auto-title: true
+layout: chapter
+file: 17-ssao
 ---
 
 Prerequisite: You should read the chapter on hemisphere sampling before reading this chapter.

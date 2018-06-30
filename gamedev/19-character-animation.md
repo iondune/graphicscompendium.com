@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 19: Character Animation"
-auto-title: true
+layout: chapter
+file: 19-character-animation
 ---
 
 

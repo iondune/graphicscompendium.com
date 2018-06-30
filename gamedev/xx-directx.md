@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture ??: DirectX Porting Guide"
-auto-title: true
+layout: chapter
+file: xx-directx
 ---
 
 

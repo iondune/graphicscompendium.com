@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 4: Simulation Time Steps"
-auto-title: true
+layout: chapter
+file: 04-time-steps
 ---
 
 

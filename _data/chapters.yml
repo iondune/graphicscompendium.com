@@ -213,6 +213,71 @@
 ## Game Dev ##
 ##############
 
+- number: 38
+  file: 00-gamedev
+  title: Game Development
+  part: gamedev
+
+- number: 39
+  file: 01-game-genres
+  title: Game Genres
+  part: gamedev
+
+- number: 40
+  file: 04-time-steps
+  title: Simulation Time Steps
+  part: gamedev
+
+- number: 41
+  file: 11-animation-intro
+  title: Basics of Animation
+  part: gamedev
+
+- number: 42
+  file: 12-rotation
+  title: Rotation Representations
+  part: gamedev
+
+- number: 43
+  file: 13-culling
+  title: Culling Techniques
+  part: gamedev
+
+- number: 44
+  file: 14-advanced-texturing
+  title: Advanced Texturing
+  part: gamedev
+
+- number: 45
+  file: 15-pbr
+  title: Physically-Based Rendering
+  part: gamedev
+
+- number: 46
+  file: 16-shadows
+  title: Shadows
+  part: gamedev
+
+- number: 47
+  file: 17-ssao
+  title: Screen-space Ambient Occlusion
+  part: gamedev
+
+- number: 48
+  file: 18-spatial-data-structures
+  title: Spatial Data Structures
+  part: gamedev
+
+- number: 49
+  file: 19-character-animation
+  title: Character Animation
+  part: gamedev
+
+- number: 50
+  file: xx-directx
+  title: Porting to DirectX
+  part: gamedev
+
 
 ##############
 ## Software ##

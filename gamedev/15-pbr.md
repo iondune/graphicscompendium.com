@@ -1,7 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 15: Cook-Torrance"
+layout: chapter
+file: 15-pbr
 ---
 
 Cook-Torrance Reflectance Model

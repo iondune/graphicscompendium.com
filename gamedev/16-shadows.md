@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 16: Shadows"
-auto-title: true
+layout: chapter
+file: 16-shadows
 ---
 
 

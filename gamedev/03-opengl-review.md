@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 3: OpenGL Review"
-auto-title: true
+layout: chapter
+file: 03-opengl-review
 ---
 
 
