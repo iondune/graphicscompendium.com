@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 9: Triangles"
-auto-title: true
+layout: chapter
+file: 09-triangles
 ---
 
 For spheres and planes, we plugged the ray equation $$ p(t) = p_o + t * \vec d $$

@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 20: Final Project Grab-Bag"
-auto-title: true
+layout: chapter
+file: 20-final-project
 ---
 
 

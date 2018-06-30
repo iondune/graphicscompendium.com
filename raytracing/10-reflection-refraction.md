@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 10: Reflection and Refraction"
-auto-title: true
+layout: chapter
+file: 10-reflection-refraction
 ---
 
 Now that we have shading & shadows in our scene, what else is there other than geometric complexity?

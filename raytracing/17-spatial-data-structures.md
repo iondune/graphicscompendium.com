@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 17: Spatial Data Structures"
-auto-title: true
+layout: chapter
+file: 17-spatial-data-structures
 ---
 
 

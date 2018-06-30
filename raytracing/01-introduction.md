@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 1: Introduction"
-auto-title: true
+layout: chapter
+file: 01-introduction
 ---
 
 ## Review of OpenGL/Graphics

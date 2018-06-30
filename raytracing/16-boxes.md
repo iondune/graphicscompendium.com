@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 16: Boxes"
-auto-title: true
+layout: chapter
+file: 16-boxes
 ---
 
 

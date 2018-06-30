@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 3: Spheres"
-auto-title: true
+layout: chapter
+file: 03-spheres
 ---
 
 

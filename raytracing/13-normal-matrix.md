@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 13: Normal Matrix"
-auto-title: true
+layout: chapter
+file: 13-normal-matrix
 ---
 
 

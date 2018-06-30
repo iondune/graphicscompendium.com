@@ -13,7 +13,7 @@
 - name: raytracing
   title: Raytracing
   fullname: Reflection and Illumination through Ray-Tracing
-  link: /raytracer
+  link: /raytracing
   color: orange
 
 - name: gamedev

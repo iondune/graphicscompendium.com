@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 11: Fresnel and Beer's Law"
-auto-title: true
+layout: chapter
+file: 11-fresnel-beer
 ---
 
 

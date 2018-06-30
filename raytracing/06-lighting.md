@@ -1,8 +1,6 @@
 ---
-layout: page
-active: lectures
-title: "Lecture 6: Lighting"
-auto-title: true
+layout: chapter
+file: 06-lighting
 ---
 
 ## Illumination

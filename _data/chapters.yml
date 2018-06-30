@@ -134,4 +134,103 @@
   title: Homogeneous Divide
 
 
+#################
+## Ray Tracing ##
+#################
+
+- number: 24
+  file: 01-introduction
+  title: Ray Tracing
+  part: raytracing
+
+- number: 25
+  file: 02-camera
+  title: Camera
+  part: raytracing
+
+- number: 26
+  file: 03-spheres
+  title: Spheres
+  part: raytracing
+
+- number: 27
+  file: 04-planes
+  title: Planes
+  part: raytracing
+
+- number: 28
+  file: 06-lighting
+  title: Lighting
+  part: raytracing
+
+- number: 29
+  file: 09-triangles
+  title: Triangles
+  part: raytracing
+
+- number: 30
+  file: 10-reflection-refraction
+  title: Reflection and Refraction
+  part: raytracing
+
+- number: 31
+  file: 11-fresnel-beer
+  title: Fresnel and Beer's Law
+  part: raytracing
+
+- number: 32
+  file: 12-transformations
+  title: Transformations
+  part: raytracing
+
+- number: 33
+  file: 13-normal-matrix
+  title: Normal Matrix
+  part: raytracing
+
+- number: 34
+  file: 16-boxes
+  title: Boxes
+  part: raytracing
+
+- number: 35
+  file: 17-spatial-data-structures
+  title: Spatial Data Structures
+  part: raytracing
+
+- number: 36
+  file: 19-monte-carlo
+  title: Monte Carlo Ray Tracing
+  part: raytracing
+
+- number: 37
+  file: 20-final-project
+  title: Advanced Ray Tracing
+  part: raytracing
+
+
+##############
+## Game Dev ##
+##############
+
+
+##############
+## Software ##
+##############
+
+
+############
+## Theory ##
+############
+
+- number: 101
+  file: 07-cook-torrance
+  title: Cook-Torrance
+  part: raytracing
+
+- number: 102
+  file: 08-cook-torrance-ggx
+  title: Cook-Torrance GGX
+  part: raytracing
+
 
