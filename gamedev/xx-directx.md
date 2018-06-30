@@ -38,7 +38,7 @@ Why not just bind that bundle of data once?
 Typically the HLSL syntax for a constant buffer looks like this:
 
 ```cpp
-cbuffer ConstantBuffer : register(b0)
+cbuffer ConstantBuffer
 {
   float4x4 uModelMatrix;
   float uCurrentTime;
@@ -47,7 +47,11 @@ cbuffer ConstantBuffer : register(b0)
 
 Then in your C++ code, you create a constant buffer, fill the data for those two fields, and upload it in one piece.
 
-Note that it's also possible to just outright declare the fields as global variables:
+Note that this doesn't create a `ConstantBuffer` scope for the variables, e.g. you just use
+`uCurrentTime` in your HSLS code, not `ConstantBuffer.uCurrentTime`.
+Consequently, you can't have variables with the same name in different constant buffers.
+
+It's also possible to just outright declare the fields as global variables:
 
 ```cpp
 float4x4 uModelMatrix;
