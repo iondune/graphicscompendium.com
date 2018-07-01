@@ -64,7 +64,7 @@ But it's common usage and it does make sense in some respects, so we're going to
 If you're wondering a little bit more about what exactly a GPU is,
 you can think of it is a processor that has a lot of cores which are not very fast.
 
-<img src="figures/cpu-vs-gpu.png" alt="cpu vs gpu" class="img-thumbnail" />
+<img src="figures/cpu-vs-gpu.svg" alt="cpu vs gpu" class="img-thumbnail" />
 
 While a fast, modern CPU might have four cores that run at, say, 2.5GHz,
 a modern GPU might have 1500 cores that run at 750MHz.

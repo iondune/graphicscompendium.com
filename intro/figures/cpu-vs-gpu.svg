@@ -1,0 +1,65 @@
+<svg width="450" height="300" viewBox="0 0 450 300" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   style="stop-color:rgb(27,98,179);  stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(78,154,242); stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   style="stop-color:rgb(27,179,98);  stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(78,242,154); stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   style="stop-color:#444; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#666; stop-opacity:1" />
+    </linearGradient>
+
+    <pattern id="cpu-cores" width="85" height="85" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="75" height="75" rx="10" ry="10" fill="url(#blue)" />
+    </pattern>
+
+    <pattern id="gpu-cores" width="15" height="15" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="10" height="10" rx="2" ry="2" fill="url(#green)" />
+    </pattern>
+
+    <filter id="dropshadow" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+  <style>
+    .title   { font: bold 30px sans-serif; }
+    .caption { font: bold 16px sans-serif; }
+  </style>
+
+
+  <text text-anchor="middle" x="110" y="35" class="title" fill="url(#blue)" filter="url(#dropshadow)">CPU</text>
+  <text text-anchor="middle" x="110" y="60" class="caption" fill="black">Optimized for</text>
+  <text text-anchor="middle" x="110" y="80" class="caption" fill="black">Serial Tasks</text>
+
+  <g transform="translate(20, 90)">
+    <rect x="0" y="0" width="180" height="180" rx="15" ry="15" fill="url(#metal)" />
+    <rect fill="url(#cpu-cores)" x="0" y="0" width="170" height="170" transform="translate(10, 10)" />
+  </g>
+
+  <text text-anchor="middle" x="340" y="35" class="title" fill="url(#green)" filter="url(#dropshadow)">GPU</text>
+  <text text-anchor="middle" x="340" y="60" class="caption" fill="black">Optimized for</text>
+  <text text-anchor="middle" x="340" y="80" class="caption" fill="black">Parallel Tasks</text>
+
+  <g transform="translate(250, 90)">
+    <rect x="0" y="0" width="180" height="180" rx="15" ry="15" fill="url(#metal)" />
+    <rect fill="url(#gpu-cores)" x="0" y="0" width="165" height="165" transform="translate(10, 10)" />
+  </g>
+
+</svg>
