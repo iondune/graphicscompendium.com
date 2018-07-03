@@ -81,9 +81,9 @@ which will be more or less what implement for our software rasterizer.
 
 <img src="figures/graphics-pipeline.png" alt="graphics pipeline" class="img-thumbnail" />
 
-**vertex array:** what are the vertices?
+**input specification:** what are the vertices?
 
-- input specification: the type of geometry we'll be rendering is specified,
+- the type of geometry we'll be rendering is specified,
   in a form that is convenient for the rasterization process we're using.
 
 **vertex shader:** move to camera's perspective
