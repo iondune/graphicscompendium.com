@@ -2,32 +2,35 @@
 layout: default
 ---
 
+<div class="spacer" id="spacer"></div>
+
 {%- assign chapters = site.data.chapters | where: "file", page.file %}
 {%- assign chapter = chapters[0] %}
 
 {%- assign parts = site.data.parts | where: "name", chapter.part %}
 {%- assign part = parts[0] %}
 
-<div class="spacer" id="spacer"></div>
-
-<div class="container" id="content">
-
-<div class="clearfix" style="text-align: center;">
 {%- assign num = chapter.number | minus: 1 %}
 {%- assign previous = site.data.chapters | where: "number", num %}
-
-{%- if previous[0] %}
-  <a class="btn chapter-button bg-{{ part.color }} float-left" href="{{ site.baseurl }}/{{ previous[0].part }}/{{ previous[0].file }}">&larr; {{ previous[0].title }}</a>
-{%- endif %}
-
-<a class="btn chapter-button bg-{{ part.color }} mx-auto" style="display: inline-block;" href="{{ part.link }}">&uarr; {{ part.title }} &uarr;</a>
-
 {%- assign num = chapter.number | plus: 1 %}
 {%- assign next = site.data.chapters | where: "number", num %}
 
-{%- if next[0] %}
-  <a class="btn chapter-button bg-{{ part.color }} float-right" href="{{ site.baseurl }}/{{ next[0].part }}/{{ next[0].file }}">{{ next[0].title }} &rarr;</a>
+<div class="container" id="content">
+
+<div class="row">
+<div class="col-md-4 chapter-prev">
+{%- if previous[0] %}
+  <a class="btn chapter-button bg-{{ part.color }}" href="{{ site.baseurl }}/{{ previous[0].part }}/{{ previous[0].file }}">&larr; {{ previous[0].title }}</a>
 {%- endif %}
+</div>
+<div class="col-md-4 chapter-up">
+  <a class="btn chapter-button bg-{{ part.color }} mx-auto" style="display: inline-block;" href="{{ part.link }}">&uarr; {{ part.title }} &uarr;</a>
+</div>
+<div class="col-md-4 chapter-next">
+{%- if next[0] %}
+  <a class="btn chapter-button bg-{{ part.color }}" href="{{ site.baseurl }}/{{ next[0].part }}/{{ next[0].file }}">{{ next[0].title }} &rarr;</a>
+{%- endif %}
+</div>
 </div>
 
 <hr />
@@ -38,14 +41,20 @@ layout: default
 
 <hr />
 
-<div class="clearfix">
+<div class="row">
+<div class="col-md-4 chapter-prev">
 {%- if previous[0] %}
-  <a class="btn chapter-button bg-{{ part.color }}" href="{{ site.baseurl }}/{{ next[0].part }}/{{ previous[0].file }}">&larr; {{ previous[0].title }}</a>
+  <a class="btn chapter-button bg-{{ part.color }}" href="{{ site.baseurl }}/{{ previous[0].part }}/{{ previous[0].file }}">&larr; {{ previous[0].title }}</a>
 {%- endif %}
-
+</div>
+<div class="col-md-4 chapter-up">
+  <a class="btn chapter-button bg-{{ part.color }} mx-auto" style="display: inline-block;" href="{{ part.link }}">&uarr; {{ part.title }} &uarr;</a>
+</div>
+<div class="col-md-4 chapter-next">
 {%- if next[0] %}
-  <a class="btn chapter-button bg-{{ part.color }} float-right" href="{{ site.baseurl }}/{{ next[0].part }}/{{ next[0].file }}">{{ next[0].title }} &rarr;</a>
+  <a class="btn chapter-button bg-{{ part.color }}" href="{{ site.baseurl }}/{{ next[0].part }}/{{ next[0].file }}">{{ next[0].title }} &rarr;</a>
 {%- endif %}
+</div>
 </div>
 
 </div>

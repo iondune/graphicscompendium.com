@@ -20,12 +20,41 @@ body {
 
 .part-button {
   border-radius: 0.3rem;
+
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
 }
 
 .chapter-button {
   color: rgba(255, 255, 255, 0.9);
+}
+
+@media (min-width: 768px) {
+  .chapter-prev {
+    text-align: left;
+  }
+  .chapter-up {
+    text-align: center;
+  }
+  .chapter-next {
+    text-align: right;
+  }
+}
+@media (max-width: 768px) {
+  .chapter-prev {
+    text-align: center;
+  }
+  .chapter-up {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+  .chapter-next {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
 }
 
 .navbar-dark .navbar-nav .nav-link {
