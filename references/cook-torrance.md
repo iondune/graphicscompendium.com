@@ -57,7 +57,7 @@ For our microfacet model we plug in $$ \vec h $$ since we want $$ D(h) $$, the c
 
 ### Blinn-Phong
 
-![Cook_Torrance_D_BlinnPhong]({{ site.baseurl }}/images/Cook_Torrance_D_BlinnPhong.png)
+![Cook_Torrance_D_BlinnPhong]({{ site.baseurl }}/raytracing/figures/Cook_Torrance_D_BlinnPhong.png)
 
 $$
 \Large D_{blinn} = \frac{1}{\pi \alpha^2} (\vec n \cdot \vec m)^{power}
@@ -80,7 +80,7 @@ $$
 
 ### Beckmann
 
-![Cook_Torrance_D_Beckmann]({{ site.baseurl }}/images/Cook_Torrance_D_Beckmann.png)
+![Cook_Torrance_D_Beckmann]({{ site.baseurl }}/raytracing/figures/Cook_Torrance_D_Beckmann.png)
 
 This is the NDF which Cook and Torrance originally advocated for in [(5)](#ref-ct).
 
@@ -107,7 +107,7 @@ With those substitutions, you find the common form of the Beckmann NDF.
 
 ### GGX
 
-![Cook_Torrance_D_GGX]({{ site.baseurl }}/images/Cook_Torrance_D_GGX.png)
+![Cook_Torrance_D_GGX]({{ site.baseurl }}/raytracing/figures/Cook_Torrance_D_GGX.png)
 
 $$
 \Large D_{GGX} =
@@ -122,7 +122,7 @@ $$
 
 ### Cook-Torrance
 
-![Cook_Torrance_G_Cook_Torrance]({{ site.baseurl }}/images/Cook_Torrance_G_Cook_Torrance.png)
+![Cook_Torrance_G_Cook_Torrance]({{ site.baseurl }}/raytracing/figures/Cook_Torrance_G_Cook_Torrance.png)
 
 $$ \Large
 G_{cook-torrance} =
@@ -132,7 +132,7 @@ $$
 
 ### GGX
 
-![Cook_Torrance_G_GGX]({{ site.baseurl }}/images/Cook_Torrance_G_GGX.png)
+![Cook_Torrance_G_GGX]({{ site.baseurl }}/raytracing/figures/Cook_Torrance_G_GGX.png)
 
 $$ \Large
 G_{GGX} =
