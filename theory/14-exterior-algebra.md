@@ -3,6 +3,8 @@ layout: chapter
 file: 14-exterior-algebra
 ---
 
+*This chapter is based on a GDC talk called ["Fundamentals of Grassman Algebra" by Eric Lengyel](https://www.gdcvault.com/play/1015534/Fundamentals-of-Grassmann).*
+
 **Exterior Algebra** is the basis for the geometric algebra we use in computer graphics.
 By understanding these fundamentals, we will understand:
 
@@ -61,7 +63,7 @@ it is something else, specifically a **bivector**.
 Bivectors are distinct from scalars and vectors, and represents an oriented 2D area
 (whereas a vector represents an oriented 1D direction and scalars are zero-dimensional values).
 
-![wedge product bivector](figures/wedge-product-bivector.png){:class="img-thumbnail"}
+{% include scaled-figure.html name="wedge-product-bivector" alt="wedge product bivector" %}
 
 The orientation of this area is sometimes called the "winding" and can be described as clockwise or counterclockwise.
 This also illustrates the anticommutivity of the wedge product - changing the order of operands reverses the orientation of the bivector.
@@ -123,7 +125,7 @@ Trivectors represent a 3D oriented volume.
 
 $$ \vec a \wedge \vec b \wedge \vec c $$
 
-![wedge product trivector](figures/wedge-product-trivector.png){:class="img-thumbnail"}
+{% include scaled-figure.html name="wedge-product-trivector" alt="wedge product trivector" %}
 
 If one of the vectors is reversed, the opposite (negated) volume is produced.
 
@@ -236,7 +238,7 @@ $$ = (a_1b_1 + a_2b_2 + a_3b_3) (e_1 \wedge e_2 \wedge e_3) $$
 
 And this is what we do in shading - $$ N \cdot L $$ - here $$ N $$ is an antivector (or bivector).
 
-![shading antiscalar](figures/shading-antiscalar.png){:class="img-thumbnail"}
+{% include scaled-figure.html name="shading-antiscalar" alt="shading antiscalar" %}
 
 What are the consequences of this?
 Well, an antiscalar is different from a scalar in that it flips sign under certain transforms,
